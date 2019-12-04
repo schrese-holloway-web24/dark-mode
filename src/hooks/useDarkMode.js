@@ -7,8 +7,10 @@ export const useDarkMode = (key, initialValue) => {
     useEffect(() => {
         if(dark === true) {
             document.querySelector('body').classList.add('dark-mode')
+            // document.querySelector('.recharts-line').classList.add('dark-line')
         } else {
             document.querySelector('body').classList.remove('dark-mode')
+            // document.querySelector('.recharts-line').classList.remove('dark-line')
         }
     }, [dark])
     return [dark, setDark]
