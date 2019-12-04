@@ -180,6 +180,10 @@ img {
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
 
+.line{
+  color: red;
+}
+
 .dark-mode__toggle {
   background: papayawhip;
   border-radius: 50px;
@@ -251,6 +255,34 @@ text-align: left;
     border: none;
   }
 
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-layer path {
+    stroke: green;
+  }
+
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-layer .recharts-line-dots circle {
+    stroke: purple;
+    fill: yellow;
+  }
+
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-xAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick .recharts-cartesian-axis-tick-line {
+    stroke: green;
+  }
+
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-xAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick text {
+    stroke: purple;
+  }
+
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-yAxis .recharts-cartesian-axis-ticks .recharts-cartesian-axis-tick text {
+    stroke: purple;
+  }
+
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-cartesian-grid .recharts-cartesian-grid-horizontal line{
+    stroke: red;
+  }
+
+  .dark-line .charts .recharts-wrapper .recharts-surface .recharts-cartesian-grid .recharts-cartesian-grid-vertical line {
+    stroke: red
+  }
   
 }
 
@@ -258,6 +290,3 @@ text-align: left;
   stroke: purple;
 }
 
-.dark-line {
-  stroke: red;
-}

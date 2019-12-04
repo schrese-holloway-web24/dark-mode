@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
+import Details from './components/Details';
 
 import "./styles.scss";
 
@@ -25,6 +26,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Charts coinData={coinData} />
+      {/* <Details coinData = {coinData} /> */}
     </div>
   );
 };

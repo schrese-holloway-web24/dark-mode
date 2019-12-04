@@ -1,8 +1,11 @@
 import React from "react";
 import Chart from "./Chart";
-
+import {Link} from 'react-router-dom';
+// import Navbar from './Navbar';
 const Charts = ({ coinData }) => {
   return (
+    <div>
+      {/* <Navbar /> */}
     <div className="charts">
       {coinData.map(coin => (
         <div className="chart__container" key={coin.name}>
@@ -12,8 +15,11 @@ const Charts = ({ coinData }) => {
             <img src={coin.image} height="40" alt={coin.name} />
           </div>
           <Chart sparklineData={coin.sparkline_in_7d.price} />
+          {/* <Link to='/Details'><button>More Info?</button></Link> */}
+          
         </div>
       ))}
+    </div>
     </div>
   );
 };
