@@ -14,8 +14,9 @@ const Charts = ({ coinData }) => {
           <div className="coin__logo">
             <img src={coin.image} height="40" alt={coin.name} />
           </div>
+          <Link to={`/Details/${coin.id}`} className="more"><button>More Info?</button></Link>
           <Chart sparklineData={coin.sparkline_in_7d.price} />
-          {/* <Link to='/Details'><button>More Info?</button></Link> */}
+          
           
         </div>
       ))}
